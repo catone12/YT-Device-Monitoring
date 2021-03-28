@@ -14,8 +14,8 @@ from services.deviceRegistryService import DeviceRegistryService
 
 
 if os.environ.get("LOG_MODE") == "prod":
-    # logging in prod mode
-    if not os.path.exists(LOG_DIR):
+    # logging in prod mode11
+   if not os.path.exists(LOG_DIR):
         os.makedirs(LOG_DIR)
     logging.basicConfig(
         format=u'%(threadName)s\t%(filename)s\t[LINE:%(lineno)d]# %(levelname)-8s\t [%(asctime)s]  %(message)s',
